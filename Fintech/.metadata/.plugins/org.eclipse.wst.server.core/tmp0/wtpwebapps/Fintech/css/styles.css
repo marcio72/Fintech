@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+    
+
+}
+:root {
+    --color-light: #ffffff;
+    --color-blue: #6959c5;
+    --color-dark: #000;
+    --color-bluedark:#1408c9;
+    --transition: .5s;
+}
+/* body{
+
+} */
+
+
+.container1{
+    /* background-color: #000; */
+    width: 45%;
+    min-height: 570px;
+    margin: 85px auto;
+    border: 1px solid #3a3a3b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (max-width: 480px){
+
+    .container1{
+        border: 1px solid rgba(33, 1, 46, 0);
+    }
+    body{
+        animation: gradient 3s ease infinite;
+        /* background: linear-gradient(90deg, #4b0268, #8d028d, #5404e7, #0917e4, #1e9bee, #8d0599, #4a026b); */
+        background: linear-gradient(90deg, #4b0268, #8d028d, #4a026b,#0c0011 );
+        background-size: 300% 300%;
+        }
+        .box{
+            min-height: 238.75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            }
+            #sald {
+                background-color: #d6ddf3;
+            }
+            #rec {
+                background-color: #d8e9e5; 
+            }
+            #desp {
+                background-color: #eed0d0; 
+            }
+}
+
+
+
+.box{
+    width: 300px;
+    min-height: 400px;
+    margin: 10px;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.boxer{
+    width: 33%px;
+    min-height: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+h2, h3, p{
+    text-align: center;
+    font-weight: 900;
+}
+.boxerh2sald{
+    color: #340af0;
+}
+
+.boxerh2receita{
+    color: #46ad09;
+}
+.boxerh2despesa{
+    color: #f52c09;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn1 {
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    padding: 8px 3.5rem;
+    border-radius: 5px;
+    color: var(--color-light);
+    transition: var(--transition);  
+}
+
+.btn1:hover{
+    background-color: transparent;
+    font-weight: 900;
+    color: var(--color-dark);
+}
+
+@keyframes gradient{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}     
+}
